@@ -1,0 +1,23 @@
+{
+  "name": "Awesome-Books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graycemuthui/Awesome-Books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Graycemuthui/Awesome-Books/issues"
+  },
+  "homepage": "https://github.com/Graycemuthui/Awesome-Books#readme",
+  "devDependencies": {
+    "hint": "^6.2.0"
+  }
+}
