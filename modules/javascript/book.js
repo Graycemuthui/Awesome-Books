@@ -1,8 +1,4 @@
-export function BookSkeleton(title, author) {
-  this.title = title;
-  this.author = author;
-  this.added_at = new Date().toLocaleDateString();
-}
+import { BookSkeleton } from "./labels.js";
 
 export class BookClass {
   hasBooks = localStorage.getItem("books");
@@ -54,7 +50,7 @@ export class BookClass {
           <p class="title-descr">${this.books[i].title} by ${
         this.books[i].author
       }</p>
-          <button class="btn" onclick='removeBook(${i})'>Remove</button>
+          <button class="btn" onclick ='window.books.removeBook(${i})'>Remove</button>
         </div>`;
     }
 
@@ -80,36 +76,3 @@ export class BookClass {
     this.displayBooks();
   }
 }
-
-// Lets get the add book button
-const addButton = document.querySelector("#add-button");
-// Lets add a click event listener with which we will perform the add logic for the new book
-addButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  const form = document.getElementById("add-book-form");
-  if (!form.reportValidity()) {
-    return;
-  }
-  // lets get the new title
-  const newTitle = document.querySelector("#book-title-input").value;
-  // now lets get the new author
-  const newAuthor = document.querySelector("#book-author-input").value;
-  // lets add it to the books object at this point
-  const book = new BookClass();
-  book.addBook(newTitle, newAuthor);
-  // okay great. Lets reset the form now
-  form.reset();
-});
-
-/* eslint-disable */
-function removeBook(key) {
-  const book = new BookClass();
-  book.removeBook(key);
-}
-/* eslint-enable */
-
-// load the form fields from local storage
-window.onload = () => {
-  const books = new BookClass();
-  books.displayBooks();
-};
