@@ -17,6 +17,10 @@
 - A web browser (e.g Chrome, Safari, Mozilla Firefox.)
 - Live Server which is a web extension that helps you to live reload feature for dynamic content (PHP, Node.js, ASPNET)
 
+### Deployment
+
+- Here is the live link to view this project [link](https://graycemuthui.github.io/Awesome-Books/)
+
 ### Setup
 
 - Using git, clone the code to your machine or download a Zip File.
