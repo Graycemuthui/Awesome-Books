@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headline Section */
+#books-list {
+  text-align: center;
+}
+
+.book-header {
+  padding: 2rem 0;
+}
+
+/* Book-container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 2px solid black;
+}
+
+.blue-container {
+  background-color: rgb(202, 195, 195);
+  padding: 0.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-descr {
+  font-size: 1.2rem;
+}
+
+.btn {
+  border: 2px solid black;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(175, 13, 13);
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+.white-container {
+  background-color: #fff;
+  border: 1px solid beige;
+  padding: 0.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input-section */
+#add-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-title-input {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.book-author-input {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+#add-book .flex-column {
+  gap: 1rem;
+}
+
+.add-book-form {
+  width: 35%;
+}
+
+.form-btn {
+  justify-content: flex-end;
+}
+
+hr {
+  margin-top: 2rem;
+  width: 47%;
+}
+
+#add-book .book-header {
+  padding: 2px;
+  margin-top: 1.25rem;
+}
+
+.nav-wrapper {
+  width: 70vw;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+}
+
+.contact-wrapper {
+  width: 70vw;
+}
+
+nav ul {
+  list-style: none;
+  gap: 25px;
+}
+
+.logo {
+  font-weight: 800;
+}
+
+.show-split::after {
+  content: "";
+  width: 2px;
+  height: 25px;
+  background: #828282;
+  position: absolute;
+  margin-left: 11px;
+  margin-top: 0;
+}
+
+.list-items li a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-items li a:hover {
+  color: blue;
+}
+
+.list-items li a:active {
+  color: blue;
+}
+
+.footer-wrapper {
+  width: 70vw;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border: 2px solid black;
+}
+
+.footer-wrapper p {
+  font-size: 14px;
+}
+
+/* Contact-section */
+.contact-section {
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.set-date {
+  width: 70%;
+  padding-top: 0.8rem;
+}

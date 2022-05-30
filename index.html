@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Awesome Books List</title>
+  </head>
+
+  <body>
+    <header class="flex flex-justify-center">
+      <nav class="flex flex-justify-center">
+        <div class="nav-wrapper flex">
+          <div class="logo flex">Bright Library</div>
+          <div class="menu-items">
+            <ul class="list-items flex">
+              <li class="show-split">
+                <a href="#" id="list-menu">List</a>
+              </li>
+              <li class="show-split">
+                <a href="#" id="add-menu">Add new</a>
+              </li>
+              <li>
+                <a href="#" id="contact-menu">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="date-section flex flex-justify-center">
+      <div class="set-date flex flex-justify-center flex-end">
+        <p id="current-date"></p>
+      </div>
+    </section>
+
+    <section id="lists" class="main-container flex-column show">
+      <div>
+        <h1 class="book-header">Bright Library</h1>
+      </div>
+      <div class="title-section" id="books"></div>
+    </section>
+
+    <section id="add-book" class="flex hide">
+      <div class="add-book-form flex flex-column">
+        <div
+          class="section-title flex flex-column flex-justify-center flex-align-center"
+        >
+          <h3 class="book-header">Add new book</h3>
+        </div>
+        <form id="add-book-form" action="#" class="flex flex-column">
+          <input
+            type="text"
+            class="book-title-input"
+            id="book-title-input"
+            placeholder="Enter the book's title"
+            required
+            maxlength="250"
+          />
+          <input
+            type="text"
+            class="book-author-input"
+            id="book-author-input"
+            placeholder="Enter author name"
+            required
+            maxlength="60"
+          />
+          <div class="flex form-btn">
+            <button id="add-button" class="btn" type="submit">Add book</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section
+      id="contact-section"
+      class="contact-section flex flex-justify-center flex-column hide"
+    >
+      <div class="flex flex-justify-center flex-column contact-wrapper">
+        <div class="flex flex-justify-center flex-column flex-align-center">
+          <h1>Contact Information</h1>
+          <br />
+        </div>
+        <div class="flex flex-justify-center flex-column flex-align-center">
+          <br />
+          <p>
+            Do you have any questions or you just want to say "Hello" <br />
+            You can reach out to us through:
+          </p>
+          <br />
+          <ul>
+            <li>Our email: Brightlibrary@gmail.com</li>
+            <li>Our phone number: +2393239372</li>
+            <li>Our address: Britam Tower Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="flex flex-justify-center">
+      <div class="footer-wrapper flex">
+        <div class="copyright">
+          <p>Copyright © 2022 | Some Rights Reserved</p>
+        </div>
+        <div class="developer">
+          <p>
+            Developed By:
+            <a href="https://github.com/kwekubright" target="blank">Bright</a>
+            and
+            <a href="https://github.com/Graycemuthui" target="blank">Grace</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
