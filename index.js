@@ -1,21 +1,21 @@
-import BookClass from './modules/javascript/book.js';
-import showSection from './modules/javascript/nav.js';
-import selectors from './modules/javascript/selectors.js';
-import { DateTime } from './modules/javascript/luxon.min.js';
+import BookClass from "./modules/javascript/book.js";
+import showSection from "./modules/javascript/nav.js";
+import selectors from "./modules/javascript/selectors.js";
+import { DateTime } from "./modules/javascript/luxon.min.js";
 
 // Lets get the add book button
-const addButton = document.querySelector('#add-button');
+const addButton = document.querySelector("#add-button");
 // Lets add a click event listener with which we will perform the add logic for the new book
-addButton.addEventListener('click', (e) => {
+addButton.addEventListener("click", (e) => {
   e.preventDefault();
-  const form = document.getElementById('add-book-form');
+  const form = document.getElementById("add-book-form");
   if (!form.reportValidity()) {
     return;
   }
   // lets get the new title
-  const newTitle = document.querySelector('#book-title-input').value;
+  const newTitle = document.querySelector("#book-title-input").value;
   // now lets get the new author
-  const newAuthor = document.querySelector('#book-author-input').value;
+  const newAuthor = document.querySelector("#book-author-input").value;
   // lets add it to the books object at this point
   const book = new BookClass();
   book.addBook(newTitle, newAuthor);
@@ -24,10 +24,10 @@ addButton.addEventListener('click', (e) => {
 });
 
 /* eslint-disable */
-function removeBook(key) {
+let removeBook = (key) => {
   const book = new BookClass();
   book.removeBook(key);
-}
+};
 
 // Event listener for list menu
 selectors.listElement.addEventListener("click", (e) => {
@@ -53,5 +53,5 @@ window.onload = () => {
 };
 
 // set the date in the page
-const element = document.getElementById('current-date');
-element.innerHTML = DateTime.now().toFormat('MMMM dd, yyyy hh:mm:ss a');
+const element = document.getElementById("current-date");
+element.innerHTML = DateTime.now().toFormat("MMMM dd, yyyy hh:mm:ss a");
