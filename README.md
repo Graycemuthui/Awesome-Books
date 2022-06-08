@@ -12,8 +12,8 @@
 - HTML & Javascript
 
 ## Getting Started
-
-- Clone this repo to get started.
+- Here is a link to the repo `https://github.com/Graycemuthui/Awesome-Books`
+- Clone this repo to get started using git clone(insert the repo here)
 
 ### Prerequisites
 
