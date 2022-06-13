@@ -5,7 +5,7 @@
 
 ## Awesome Books Project
 
-- This is a Microverse project that entails a booklist.
+- This is a Microverse project that entails a booklist where a user can add and remove books.
 
 ## Built With
 
