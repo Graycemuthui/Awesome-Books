@@ -11,14 +11,11 @@ addButton.addEventListener('click', (e) => {
   if (!form.reportValidity()) {
     return;
   }
-  // lets get the new title
+
   const newTitle = document.querySelector('#book-title-input').value;
-  // now lets get the new author
   const newAuthor = document.querySelector('#book-author-input').value;
-  // lets add it to the books object at this point
   const book = new BookClass();
   book.addBook(newTitle, newAuthor);
-  // okay great. Lets reset the form now
   form.reset();
 });
 
@@ -28,29 +25,28 @@ let removeBook = (key) => {
   book.removeBook(key);
 };
 
-// Event listener for list menu
+
 selectors.listElement.addEventListener("click", (e) => {
   showSection(e, "lists");
 });
 
-// Event listener for add new menu
+
 selectors.addElement.addEventListener("click", (e) => {
   showSection(e, "add-book");
 });
 
-// Event listener for contact menu
+
 selectors.contactElement.addEventListener("click", (e) => {
   showSection(e, "contact-section");
 });
 /* eslint-enable */
 
-// load the form fields from local storage
+
 window.onload = () => {
   const books = new BookClass();
   window.books = books;
   books.displayBooks();
 };
 
-// set the date in the page
 const element = document.getElementById('current-date');
 element.innerHTML = DateTime.now().toFormat('MMMM dd, yyyy hh:mm:ss a');
