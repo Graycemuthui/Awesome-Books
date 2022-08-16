@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 2. Open the directory of the project
    ```sh
-   cd Conference Page.git
+   cd Awesome-Books.git
    ```
 3. Open the html file
    ```sh
