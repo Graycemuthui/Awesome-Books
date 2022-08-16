@@ -3,9 +3,8 @@ import showSection from './modules/javascript/nav.js';
 import selectors from './modules/javascript/selectors.js';
 import { DateTime } from './modules/javascript/luxon.min.js';
 
-// Lets get the add book button
+
 const addButton = document.querySelector('#add-button');
-// Lets add a click event listener with which we will perform the add logic for the new book
 addButton.addEventListener('click', (e) => {
   e.preventDefault();
   const form = document.getElementById('add-book-form');
