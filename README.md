@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo by running the command
    ```sh
-    git clone https://github.com/Graycemuthui/Conference-Page.git
+    git clone https://github.com/Graycemuthui/Awesome-Books
    ```
 2. Open the directory of the project
    ```sh
