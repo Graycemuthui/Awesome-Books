@@ -1,6 +1,6 @@
 import selectors from './selectors.js';
 
-// Function to show a section and hide other sections.
+
 export default (e, sectionId) => {
   e.preventDefault();
   const target = document.getElementById(sectionId);
@@ -9,7 +9,6 @@ export default (e, sectionId) => {
 
   switch (sectionId) {
     case 'lists':
-      // Show lists section and hide the others
       selectors.listSection.classList.remove('hide');
       selectors.addSection.classList.add('hide');
       selectors.addSection.classList.remove('show');
@@ -17,7 +16,6 @@ export default (e, sectionId) => {
       selectors.contactSection.classList.remove('show');
       break;
     case 'add-book':
-      // Show add book section and hide the others
       selectors.addSection.classList.remove('hide');
       selectors.listSection.classList.add('hide');
       selectors.listSection.classList.remove('show');
@@ -25,7 +23,6 @@ export default (e, sectionId) => {
       selectors.contactSection.classList.remove('show');
       break;
     case 'contact-section':
-      // Show contact section and hide the others
       selectors.contactSection.classList.remove('hide');
       selectors.listSection.classList.add('hide');
       selectors.listSection.classList.remove('show');
