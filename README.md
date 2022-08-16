@@ -1,11 +1,11 @@
+## Awesome Books Project
+
+- This is a Microverse project that entails a booklist where a user can add and remove books.
+
 ### Screenshot
 
 -Here is  a Screenshot for the project
 ![geegee](https://user-images.githubusercontent.com/95374858/171064763-21a41de8-e03b-4d4f-9c49-4a443ac21a2f.png)
-
-## Awesome Books Project
-
-- This is a Microverse project that entails a booklist where a user can add and remove books.
 
 ## Built With
 
@@ -80,4 +80,4 @@ See the [open issues](#) for a full list of proposed features (and known issues)
 
 ## 📝 License
 
-- This project is [MIT](./MIT.md) licensed.
+- This project is [MIT](https://github.com/Graycemuthui/Awesome-Books/blob/main/License.md) licensed.
