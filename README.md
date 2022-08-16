@@ -31,7 +31,7 @@
 
 ### Live Demo
 
-- Here is the live link to view this project [link](https://graycemuthui.github.io/Awesome-Books/)
+- Here is the live link to view this project [link](https://jocular-meringue-30744e.netlify.app/)
 
 ### Getting Started
 
