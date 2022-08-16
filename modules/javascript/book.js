@@ -31,12 +31,9 @@ export default class BookClass {
   ];
 
   constructor() {
-    // Lets create initial collection if there are no books in storage
     if (!this.hasBooks) {
-      // Okay, now lets save books to local storage
       localStorage.setItem('books', JSON.stringify(this.books));
     } else {
-      // We load the collection from storage if exists
       this.books = JSON.parse(this.hasBooks);
     }
   }
@@ -57,20 +54,17 @@ export default class BookClass {
     document.querySelector('#books').innerHTML = bookHtml;
   }
 
-  // Lets define our add book function
+  
   addBook(title, author) {
     this.books.push(new BookSkeleton(title, author));
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
   }
 
-  // Lets define our remove book function
+
   removeBook(key) {
-    // lets remove the book
     this.books.splice(key, 1);
-    // lets update the storage
     localStorage.setItem('books', JSON.stringify(this.books));
-    // lets update the page
     const id = `book-${key}`;
     document.getElementById(id).remove();
     this.displayBooks();
